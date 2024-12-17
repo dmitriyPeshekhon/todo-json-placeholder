@@ -1,0 +1,57 @@
+.container {
+	height: 100vh;
+	background: rgb(253,193,195);
+	background: linear-gradient(90deg, rgba(253,193,195,1) 0%, rgba(154,112,200,1) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tablo {
+	width: 450px;
+	min-height: 400px;
+	max-height: 75vh;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+	padding: 30px 25px;
+	border-radius: 10px;
+	background: white;
+	overflow: auto;
+}
+
+.error {
+	align-self: center;
+}
+
+.loader {
+	align-self: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	background: linear-gradient(0deg, rgba(51, 122, 183, 0.2) 33%, rgba(154,112,200,1) 100%);
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #FFFFFF;
+  }
+  @keyframes rotation {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }

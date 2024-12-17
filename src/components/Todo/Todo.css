@@ -1,0 +1,23 @@
+.todo-container {
+	display: flex;
+	align-items: start;
+	gap: 20px;
+}
+
+.container-checkbox {
+	width: 20px;
+	height: 20px;
+}
+
+.toggle-todo {
+	accent-color: rgba(154,112,200,1);
+	width: 20px;
+	height: 20px;
+}
+
+.title-todo {
+	margin: 0;
+	line-height: 1;
+	font-size: 22px;
+}
+
